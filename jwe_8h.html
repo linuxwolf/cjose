@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">CJOSE
-   &#160;<span id="projectnumber">0.1.2</span>
+   &#160;<span id="projectnumber">0.2.0</span>
    </div>
   </td>
  </tr>
@@ -111,14 +111,16 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a3a9043dfcd1794679ed92738722dc9b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="jwe_8h.html#a080e14b1c8948c89f65b740474792496">cjose_jwe_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jwe_8h.html#a3a9043dfcd1794679ed92738722dc9b6">cjose_jwe_encrypt</a> (const <a class="el" href="jwk_8h.html#a8bf81334275100f767b1e94742b9d648">cjose_jwk_t</a> *jwk, <a class="el" href="header_8h.html#aaf54c81c6d7513fde1621dbe6d47fa57">cjose_header_t</a> *header, const uint8_t *plaintext, size_t plaintext_len, <a class="el" href="structcjose__err.html">cjose_err</a> *err)</td></tr>
-<tr class="separator:a3a9043dfcd1794679ed92738722dc9b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7310417ebbce6715a58a31188d810ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="jwe_8h.html#a080e14b1c8948c89f65b740474792496">cjose_jwe_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jwe_8h.html#aa7310417ebbce6715a58a31188d810ab">cjose_jwe_encrypt</a> (const <a class="el" href="jwk_8h.html#a8bf81334275100f767b1e94742b9d648">cjose_jwk_t</a> *jwk, <a class="el" href="header_8h.html#aaf54c81c6d7513fde1621dbe6d47fa57">cjose_header_t</a> *protected_header, const uint8_t *plaintext, size_t plaintext_len, <a class="el" href="structcjose__err.html">cjose_err</a> *err)</td></tr>
+<tr class="separator:aa7310417ebbce6715a58a31188d810ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9867d9c58c53186f821606376a6f070e"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jwe_8h.html#a9867d9c58c53186f821606376a6f070e">cjose_jwe_export</a> (<a class="el" href="jwe_8h.html#a080e14b1c8948c89f65b740474792496">cjose_jwe_t</a> *jwe, <a class="el" href="structcjose__err.html">cjose_err</a> *err)</td></tr>
 <tr class="separator:a9867d9c58c53186f821606376a6f070e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89b8df7a38bd7319a57d498f153b96a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="jwe_8h.html#a080e14b1c8948c89f65b740474792496">cjose_jwe_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jwe_8h.html#a89b8df7a38bd7319a57d498f153b96a1">cjose_jwe_import</a> (const char *compact, size_t compact_len, <a class="el" href="structcjose__err.html">cjose_err</a> *err)</td></tr>
 <tr class="separator:a89b8df7a38bd7319a57d498f153b96a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed43ac8f57dd69ced029d9039f47c923"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jwe_8h.html#aed43ac8f57dd69ced029d9039f47c923">cjose_jwe_decrypt</a> (<a class="el" href="jwe_8h.html#a080e14b1c8948c89f65b740474792496">cjose_jwe_t</a> *jwe, const <a class="el" href="jwk_8h.html#a8bf81334275100f767b1e94742b9d648">cjose_jwk_t</a> *jwk, size_t *content_len, <a class="el" href="structcjose__err.html">cjose_err</a> *err)</td></tr>
 <tr class="separator:aed43ac8f57dd69ced029d9039f47c923"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86c277f207b0c8362bc3687c0b1bb01a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="header_8h.html#aaf54c81c6d7513fde1621dbe6d47fa57">cjose_header_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jwe_8h.html#a86c277f207b0c8362bc3687c0b1bb01a">cjose_jwe_get_protected</a> (<a class="el" href="jwe_8h.html#a080e14b1c8948c89f65b740474792496">cjose_jwe_t</a> *jwe)</td></tr>
+<tr class="separator:a86c277f207b0c8362bc3687c0b1bb01a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6d69e3780cd046229227f05b2fbc6b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jwe_8h.html#af6d69e3780cd046229227f05b2fbc6b8">cjose_jwe_release</a> (<a class="el" href="jwe_8h.html#a080e14b1c8948c89f65b740474792496">cjose_jwe_t</a> *jwe)</td></tr>
 <tr class="separator:af6d69e3780cd046229227f05b2fbc6b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -188,7 +190,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a3a9043dfcd1794679ed92738722dc9b6"></a>
+<a class="anchor" id="aa7310417ebbce6715a58a31188d810ab"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -202,7 +204,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="header_8h.html#aaf54c81c6d7513fde1621dbe6d47fa57">cjose_header_t</a> *&#160;</td>
-          <td class="paramname"><em>header</em>, </td>
+          <td class="paramname"><em>protected_header</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -235,7 +237,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">jwk</td><td>[in] the key to use for encrypting the JWE. </td></tr>
-    <tr><td class="paramname">header</td><td>[in] additional header values to include in the JWE header. </td></tr>
+    <tr><td class="paramname">protected_header</td><td>[in] additional header values to include in the JWE header. </td></tr>
     <tr><td class="paramname">plaintext</td><td>[in] the plaintext to be encrypted in the JWE payload. </td></tr>
     <tr><td class="paramname">plaintext_len</td><td>[in] the length of the plaintext. </td></tr>
     <tr><td class="paramname">err</td><td>[out] An optional error object which can be used to get additional information in the event of an error. </td></tr>
@@ -279,6 +281,31 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to a compact serialization of this JWE. Note the returned string pointer is owned by the caller, the caller must free it directly when no longer needed, or the memory will be leaked. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a86c277f207b0c8362bc3687c0b1bb01a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="header_8h.html#aaf54c81c6d7513fde1621dbe6d47fa57">cjose_header_t</a>* cjose_jwe_get_protected </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="jwe_8h.html#a080e14b1c8948c89f65b740474792496">cjose_jwe_t</a> *&#160;</td>
+          <td class="paramname"><em>jwe</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the protected header of the JWE object.</p>
+<p><b>NOTE:</b> The returned header is still owned by the JWE object. Users must call <code><a class="el" href="header_8h.html#a9283e11f72cc825217c56882ff3c3498">cjose_header_retain()</a></code> if it is expected to be valid after the owning <code>cjose_jwe_t</code> is released.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">jwe</td><td>[in] the JWE object for which the protected header is requested. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the (parsed) protected header </dd></dl>
 
 </div>
 </div>
@@ -351,7 +378,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 15 2016 09:56:17 for CJOSE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 6 2016 15:39:38 for CJOSE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">CJOSE
-   &#160;<span id="projectnumber">0.1.2</span>
+   &#160;<span id="projectnumber">0.2.0</span>
    </div>
   </td>
  </tr>
@@ -110,8 +110,8 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a52c54b750b6a47b92ba3510ed788f067"><td class="memItemLeft" align="right" valign="top"><a class="el" href="jws_8h.html#af77a5ba71c30bc64aa1b75929a38619d">cjose_jws_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jws_8h.html#a52c54b750b6a47b92ba3510ed788f067">cjose_jws_sign</a> (const <a class="el" href="jwk_8h.html#a8bf81334275100f767b1e94742b9d648">cjose_jwk_t</a> *jwk, <a class="el" href="header_8h.html#aaf54c81c6d7513fde1621dbe6d47fa57">cjose_header_t</a> *header, const uint8_t *plaintext, size_t plaintext_len, <a class="el" href="structcjose__err.html">cjose_err</a> *err)</td></tr>
-<tr class="separator:a52c54b750b6a47b92ba3510ed788f067"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51d5e4c61df26017fe09126f28df1010"><td class="memItemLeft" align="right" valign="top"><a class="el" href="jws_8h.html#af77a5ba71c30bc64aa1b75929a38619d">cjose_jws_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jws_8h.html#a51d5e4c61df26017fe09126f28df1010">cjose_jws_sign</a> (const <a class="el" href="jwk_8h.html#a8bf81334275100f767b1e94742b9d648">cjose_jwk_t</a> *jwk, <a class="el" href="header_8h.html#aaf54c81c6d7513fde1621dbe6d47fa57">cjose_header_t</a> *protected_header, const uint8_t *plaintext, size_t plaintext_len, <a class="el" href="structcjose__err.html">cjose_err</a> *err)</td></tr>
+<tr class="separator:a51d5e4c61df26017fe09126f28df1010"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6042454c98e23806030af637fe57ebb8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jws_8h.html#a6042454c98e23806030af637fe57ebb8">cjose_jws_export</a> (<a class="el" href="jws_8h.html#af77a5ba71c30bc64aa1b75929a38619d">cjose_jws_t</a> *jws, const char **ser, <a class="el" href="structcjose__err.html">cjose_err</a> *err)</td></tr>
 <tr class="separator:a6042454c98e23806030af637fe57ebb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ec616c3a8653c0e4af2b3a1d14b6055"><td class="memItemLeft" align="right" valign="top"><a class="el" href="jws_8h.html#af77a5ba71c30bc64aa1b75929a38619d">cjose_jws_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jws_8h.html#a9ec616c3a8653c0e4af2b3a1d14b6055">cjose_jws_import</a> (const char *compact, size_t compact_len, <a class="el" href="structcjose__err.html">cjose_err</a> *err)</td></tr>
@@ -120,6 +120,8 @@ Functions</h2></td></tr>
 <tr class="separator:abc5d5c8757d8144dec16ead80dfb104b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a383ee0d195977dd4e9c50785bd1bd0a2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jws_8h.html#a383ee0d195977dd4e9c50785bd1bd0a2">cjose_jws_get_plaintext</a> (const <a class="el" href="jws_8h.html#af77a5ba71c30bc64aa1b75929a38619d">cjose_jws_t</a> *jws, uint8_t **plaintext, size_t *plaintext_len, <a class="el" href="structcjose__err.html">cjose_err</a> *err)</td></tr>
 <tr class="separator:a383ee0d195977dd4e9c50785bd1bd0a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8342bdc3cb93cbe9c38b9e55909eb615"><td class="memItemLeft" align="right" valign="top"><a class="el" href="header_8h.html#aaf54c81c6d7513fde1621dbe6d47fa57">cjose_header_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jws_8h.html#a8342bdc3cb93cbe9c38b9e55909eb615">cjose_jws_get_protected</a> (<a class="el" href="jws_8h.html#af77a5ba71c30bc64aa1b75929a38619d">cjose_jws_t</a> *jws)</td></tr>
+<tr class="separator:a8342bdc3cb93cbe9c38b9e55909eb615"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bb4cb0cdea31f29fce8dcd7847623ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jws_8h.html#a4bb4cb0cdea31f29fce8dcd7847623ca">cjose_jws_release</a> (<a class="el" href="jws_8h.html#af77a5ba71c30bc64aa1b75929a38619d">cjose_jws_t</a> *jws)</td></tr>
 <tr class="separator:a4bb4cb0cdea31f29fce8dcd7847623ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -232,6 +234,31 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a8342bdc3cb93cbe9c38b9e55909eb615"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="header_8h.html#aaf54c81c6d7513fde1621dbe6d47fa57">cjose_header_t</a>* cjose_jws_get_protected </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="jws_8h.html#af77a5ba71c30bc64aa1b75929a38619d">cjose_jws_t</a> *&#160;</td>
+          <td class="paramname"><em>jws</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the protected header of the JWS payload.</p>
+<p><b>NOTE:</b> The returned header is still owned by the JWS object. Users must call <code><a class="el" href="header_8h.html#a9283e11f72cc825217c56882ff3c3498">cjose_header_retain()</a></code> if it is expected to be valid after the owning <code>cjose_jws_t</code> is released.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">jws</td><td>[in] the JWS object for which the protected header is requested. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the (parsed) protected header </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a9ec616c3a8653c0e4af2b3a1d14b6055"></a>
 <div class="memitem">
 <div class="memproto">
@@ -298,7 +325,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a52c54b750b6a47b92ba3510ed788f067"></a>
+<a class="anchor" id="a51d5e4c61df26017fe09126f28df1010"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -312,7 +339,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="header_8h.html#aaf54c81c6d7513fde1621dbe6d47fa57">cjose_header_t</a> *&#160;</td>
-          <td class="paramname"><em>header</em>, </td>
+          <td class="paramname"><em>protected_header</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -343,7 +370,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">jwk</td><td>[in] the key to use for signing the JWS. </td></tr>
-    <tr><td class="paramname">header</td><td>[in] header values to include in the JWS header. </td></tr>
+    <tr><td class="paramname">protected_header</td><td>[in] header values to include in the JWS header. </td></tr>
     <tr><td class="paramname">plaintext</td><td>[in] the plaintext to be signed as the JWS payload. </td></tr>
     <tr><td class="paramname">plaintext_len</td><td>[in] the length of the plaintext. </td></tr>
     <tr><td class="paramname">err</td><td>[out] An optional error object which can be used to get additional information in the event of an error. </td></tr>
@@ -399,7 +426,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 15 2016 09:56:17 for CJOSE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 6 2016 15:39:38 for CJOSE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

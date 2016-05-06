@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">CJOSE
-   &#160;<span id="projectnumber">0.1.2</span>
+   &#160;<span id="projectnumber">0.2.0</span>
    </div>
   </td>
  </tr>
@@ -101,6 +101,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="textblock">Here is a list of all documented file members with links to the documentation:</div>
 
 <h3><a class="anchor" id="index_c"></a>- c -</h3><ul>
+<li>cjose_alloc_fn_t
+: <a class="el" href="util_8h.html#a20741e0742cf778a26cf029873e251af">util.h</a>
+</li>
 <li>cjose_base64_decode()
 : <a class="el" href="base64_8h.html#a039377cf188a8087666d4a8515a14924">base64.h</a>
 </li>
@@ -112,6 +115,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>cjose_base64url_encode()
 : <a class="el" href="base64_8h.html#a4fa02109fd6bc4a09c432d18e776ccea">base64.h</a>
+</li>
+<li>cjose_dealloc_fn_t
+: <a class="el" href="util_8h.html#acaecc0c64e57184357dc9b8ff0d56e5a">util.h</a>
 </li>
 <li>CJOSE_ERR_CRYPTO
 : <a class="el" href="error_8h.html#a9ae559c1a5890670d52c1dae8ca6e5a1ab72777e5c578714120c602ca24cfc058">error.h</a>
@@ -136,6 +142,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>CJOSE_ERROR
 : <a class="el" href="error_8h.html#a0dd2aeda8a86cf42b3b48eb9cb7965aa">error.h</a>
+</li>
+<li>cjose_get_alloc()
+: <a class="el" href="util_8h.html#a4e7fc330e51442b5aafbeba1f393b4c7">util.h</a>
+</li>
+<li>cjose_get_dealloc()
+: <a class="el" href="util_8h.html#a29af3d34fdc8bd412aaf89b8e235cf25">util.h</a>
+</li>
+<li>cjose_get_realloc()
+: <a class="el" href="util_8h.html#ae2bc9cb2705fbdceb7919c5de7e27d6b">util.h</a>
 </li>
 <li>CJOSE_HDR_ALG
 : <a class="el" href="header_8h.html#abee2c2679528e7356ea361c55f00dfa7">header.h</a>
@@ -173,6 +188,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>cjose_header_release()
 : <a class="el" href="header_8h.html#a78fee8f970eadd8c131c3534b8cd2bb7">header.h</a>
 </li>
+<li>cjose_header_retain()
+: <a class="el" href="header_8h.html#a9283e11f72cc825217c56882ff3c3498">header.h</a>
+</li>
 <li>cjose_header_set()
 : <a class="el" href="header_8h.html#ac07d9c397f271cd20a7e5afa267d106c">header.h</a>
 </li>
@@ -183,10 +201,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="jwe_8h.html#aed43ac8f57dd69ced029d9039f47c923">jwe.h</a>
 </li>
 <li>cjose_jwe_encrypt()
-: <a class="el" href="jwe_8h.html#a3a9043dfcd1794679ed92738722dc9b6">jwe.h</a>
+: <a class="el" href="jwe_8h.html#aa7310417ebbce6715a58a31188d810ab">jwe.h</a>
 </li>
 <li>cjose_jwe_export()
 : <a class="el" href="jwe_8h.html#a9867d9c58c53186f821606376a6f070e">jwe.h</a>
+</li>
+<li>cjose_jwe_get_protected()
+: <a class="el" href="jwe_8h.html#a86c277f207b0c8362bc3687c0b1bb01a">jwe.h</a>
 </li>
 <li>cjose_jwe_import()
 : <a class="el" href="jwe_8h.html#a89b8df7a38bd7319a57d498f153b96a1">jwe.h</a>
@@ -278,6 +299,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>cjose_jws_get_plaintext()
 : <a class="el" href="jws_8h.html#a383ee0d195977dd4e9c50785bd1bd0a2">jws.h</a>
 </li>
+<li>cjose_jws_get_protected()
+: <a class="el" href="jws_8h.html#a8342bdc3cb93cbe9c38b9e55909eb615">jws.h</a>
+</li>
 <li>cjose_jws_import()
 : <a class="el" href="jws_8h.html#a9ec616c3a8653c0e4af2b3a1d14b6055">jws.h</a>
 </li>
@@ -285,13 +309,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="jws_8h.html#a4bb4cb0cdea31f29fce8dcd7847623ca">jws.h</a>
 </li>
 <li>cjose_jws_sign()
-: <a class="el" href="jws_8h.html#a52c54b750b6a47b92ba3510ed788f067">jws.h</a>
+: <a class="el" href="jws_8h.html#a51d5e4c61df26017fe09126f28df1010">jws.h</a>
 </li>
 <li>cjose_jws_t
 : <a class="el" href="jws_8h.html#af77a5ba71c30bc64aa1b75929a38619d">jws.h</a>
 </li>
 <li>cjose_jws_verify()
 : <a class="el" href="jws_8h.html#abc5d5c8757d8144dec16ead80dfb104b">jws.h</a>
+</li>
+<li>cjose_realloc_fn_t
+: <a class="el" href="util_8h.html#a961e89fab81c17b4f4e260b99447df09">util.h</a>
+</li>
+<li>cjose_set_alloc_funcs()
+: <a class="el" href="util_8h.html#aa5c2aabebabb066e431818d7ed5393aa">util.h</a>
 </li>
 <li>CJOSE_VERSION
 : <a class="el" href="version_8h.html#a51b201fe16dc137305cc6a922cedce5c">version.h</a>
@@ -310,7 +340,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 15 2016 09:56:17 for CJOSE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 6 2016 15:39:38 for CJOSE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

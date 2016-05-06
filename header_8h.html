@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">CJOSE
-   &#160;<span id="projectnumber">0.1.2</span>
+   &#160;<span id="projectnumber">0.2.0</span>
    </div>
   </td>
  </tr>
@@ -110,6 +110,8 @@ Typedefs</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a4507dd8f7840ed73c82c11c9c02a8fbb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="header_8h.html#aaf54c81c6d7513fde1621dbe6d47fa57">cjose_header_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="header_8h.html#a4507dd8f7840ed73c82c11c9c02a8fbb">cjose_header_new</a> (<a class="el" href="structcjose__err.html">cjose_err</a> *err)</td></tr>
 <tr class="separator:a4507dd8f7840ed73c82c11c9c02a8fbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9283e11f72cc825217c56882ff3c3498"><td class="memItemLeft" align="right" valign="top"><a class="el" href="header_8h.html#aaf54c81c6d7513fde1621dbe6d47fa57">cjose_header_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="header_8h.html#a9283e11f72cc825217c56882ff3c3498">cjose_header_retain</a> (<a class="el" href="header_8h.html#aaf54c81c6d7513fde1621dbe6d47fa57">cjose_header_t</a> *header)</td></tr>
+<tr class="separator:a9283e11f72cc825217c56882ff3c3498"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78fee8f970eadd8c131c3534b8cd2bb7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="header_8h.html#a78fee8f970eadd8c131c3534b8cd2bb7">cjose_header_release</a> (<a class="el" href="header_8h.html#aaf54c81c6d7513fde1621dbe6d47fa57">cjose_header_t</a> *header)</td></tr>
 <tr class="separator:a78fee8f970eadd8c131c3534b8cd2bb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac07d9c397f271cd20a7e5afa267d106c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="header_8h.html#ac07d9c397f271cd20a7e5afa267d106c">cjose_header_set</a> (<a class="el" href="header_8h.html#aaf54c81c6d7513fde1621dbe6d47fa57">cjose_header_t</a> *header, const char *attr, const char *value, <a class="el" href="structcjose__err.html">cjose_err</a> *err)</td></tr>
@@ -241,6 +243,30 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a class="anchor" id="a9283e11f72cc825217c56882ff3c3498"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="header_8h.html#aaf54c81c6d7513fde1621dbe6d47fa57">cjose_header_t</a>* cjose_header_retain </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="header_8h.html#aaf54c81c6d7513fde1621dbe6d47fa57">cjose_header_t</a> *&#160;</td>
+          <td class="paramname"><em>header</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Retains an existing header object. Callers must use this method if the header will be used past the scope it was created in (e.g., from a <code>cjose_jws_t</code> object).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">header[in]</td><td>the header object to be retained. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the retained header object </dd></dl>
 
 </div>
 </div>
@@ -414,7 +440,7 @@ Variables</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 15 2016 09:56:17 for CJOSE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 6 2016 15:39:38 for CJOSE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
