@@ -5,6 +5,7 @@ var searchData=
   ['cjose_5ferr_5finvalid_5fstate',['CJOSE_ERR_INVALID_STATE',['../error_8h.html#a9ae559c1a5890670d52c1dae8ca6e5a1a6e79b7e949d23d5f3c4e614f40102b22',1,'error.h']]],
   ['cjose_5ferr_5fno_5fmemory',['CJOSE_ERR_NO_MEMORY',['../error_8h.html#a9ae559c1a5890670d52c1dae8ca6e5a1afa8485407deb10931053e9843082797e',1,'error.h']]],
   ['cjose_5ferr_5fnone',['CJOSE_ERR_NONE',['../error_8h.html#a9ae559c1a5890670d52c1dae8ca6e5a1aec84b51afc54a7322e4cdb0750c9ee60',1,'error.h']]],
+  ['cjose_5fjwk_5fec_5finvalid',['CJOSE_JWK_EC_INVALID',['../jwk_8h.html#a5f7f252635dde03c13704ccce6e06fe5aa1f68c95b0181fbdde2e2c7610ddb068',1,'jwk.h']]],
   ['cjose_5fjwk_5fec_5fp_5f256',['CJOSE_JWK_EC_P_256',['../jwk_8h.html#a5f7f252635dde03c13704ccce6e06fe5ac24b823e12b69ff6fbe22f9396a6f8bf',1,'jwk.h']]],
   ['cjose_5fjwk_5fec_5fp_5f384',['CJOSE_JWK_EC_P_384',['../jwk_8h.html#a5f7f252635dde03c13704ccce6e06fe5ae446e12e6162bfa91367d0458df71943',1,'jwk.h']]],
   ['cjose_5fjwk_5fec_5fp_5f521',['CJOSE_JWK_EC_P_521',['../jwk_8h.html#a5f7f252635dde03c13704ccce6e06fe5a645829b190e19597971a6d60b1269d25',1,'jwk.h']]],

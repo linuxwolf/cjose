@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>CJOSE: /Users/mmiller/Repositories/github.com/cjose/include/cjose/version.h File Reference</title>
+<title>CJOSE: cjose_jwe_recipient_t Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -60,73 +60,61 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_55b9275dd3380a8a8f3d70da798804d2.html">cjose</a></li>  </ul>
-</div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="structcjose__jwe__recipient__t-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">version.h File Reference</div>  </div>
+<div class="title">cjose_jwe_recipient_t Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Function to retrieve the version of CJOSE.  
-<a href="#details">More...</a></p>
-
-<p><a href="version_8h_source.html">Go to the source code of this file.</a></p>
+<p><code>#include &lt;<a class="el" href="jwe_8h_source.html">jwe.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a51b201fe16dc137305cc6a922cedce5c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="version_8h.html#a51b201fe16dc137305cc6a922cedce5c">CJOSE_VERSION</a>&#160;&#160;&#160;&quot;0.6.0&quot;</td></tr>
-<tr class="separator:a51b201fe16dc137305cc6a922cedce5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ae4ce61c27d0fcfba9c1ada25d87d425a"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="version_8h.html#ae4ce61c27d0fcfba9c1ada25d87d425a">cjose_version</a> ()</td></tr>
-<tr class="separator:ae4ce61c27d0fcfba9c1ada25d87d425a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a4f519795beeb9710174e32a1cbe95139"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="jwk_8h.html#a8bf81334275100f767b1e94742b9d648">cjose_jwk_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcjose__jwe__recipient__t.html#a4f519795beeb9710174e32a1cbe95139">jwk</a></td></tr>
+<tr class="separator:a4f519795beeb9710174e32a1cbe95139"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a126de8a139ccea0b830efbda01716480"><td class="memItemLeft" align="right" valign="top"><a class="el" href="header_8h.html#aaf54c81c6d7513fde1621dbe6d47fa57">cjose_header_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcjose__jwe__recipient__t.html#a126de8a139ccea0b830efbda01716480">unprotected_header</a></td></tr>
+<tr class="separator:a126de8a139ccea0b830efbda01716480"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Function to retrieve the version of CJOSE. </p>
-</div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a51b201fe16dc137305cc6a922cedce5c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a51b201fe16dc137305cc6a922cedce5c">&#9670;&nbsp;</a></span>CJOSE_VERSION</h2>
+<div class="textblock"><p>Supplemental structure to represent JWE recipients </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="a4f519795beeb9710174e32a1cbe95139"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f519795beeb9710174e32a1cbe95139">&#9670;&nbsp;</a></span>jwk</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define CJOSE_VERSION&#160;&#160;&#160;&quot;0.6.0&quot;</td>
+          <td class="memname">const <a class="el" href="jwk_8h.html#a8bf81334275100f767b1e94742b9d648">cjose_jwk_t</a>* cjose_jwe_recipient_t::jwk</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The declaration version of CJOSE. This identifies the version the header files were compiled for. </p>
+<p>Key to use for this recipient </p>
 
 </div>
 </div>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="ae4ce61c27d0fcfba9c1ada25d87d425a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae4ce61c27d0fcfba9c1ada25d87d425a">&#9670;&nbsp;</a></span>cjose_version()</h2>
+<a id="a126de8a139ccea0b830efbda01716480"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a126de8a139ccea0b830efbda01716480">&#9670;&nbsp;</a></span>unprotected_header</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char* cjose_version </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname"><a class="el" href="header_8h.html#aaf54c81c6d7513fde1621dbe6d47fa57">cjose_header_t</a>* cjose_jwe_recipient_t::unprotected_header</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Retrieves the implementation version of CJOSE.</p>
-<dl class="section return"><dt>Returns</dt><dd>the implementation version number. </dd></dl>
+<p>Additional unprotected header for this recipient </p>
 
 </div>
 </div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>/Users/mmiller/Repositories/github.com/cjose/include/cjose/<a class="el" href="jwe_8h_source.html">jwe.h</a></li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

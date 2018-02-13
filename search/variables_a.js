@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['y',['y',['../structcjose__jwk__ec__keyspec.html#a3c900d4bf59be454220bfca566a012ac',1,'cjose_jwk_ec_keyspec']]],
-  ['ylen',['ylen',['../structcjose__jwk__ec__keyspec.html#ac5dfd5d8d06e90ef86c1d87ff95375c3',1,'cjose_jwk_ec_keyspec']]]
+  ['unprotected_5fheader',['unprotected_header',['../structcjose__jwe__recipient__t.html#a126de8a139ccea0b830efbda01716480',1,'cjose_jwe_recipient_t']]]
 ];
