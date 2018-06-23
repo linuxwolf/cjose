@@ -56,16 +56,17 @@ static const char *JWK_COMMON_EC = "{ \"kty\":\"EC\","
 
 // a JWS encrypted with the above JWK_COMMON key
 static const char *JWS_COMMON
-    = "eyAiYWxnIjogIlBTMjU2IiB9."
+    = "eyJhbGciOiJQUzI1NiJ9."
       "SWYgeW91IHJldmVhbCB5b3VyIHNlY3JldHMgdG8gdGhlIHdpbmQsIHlvdSBzaG91bGQgbm90IGJsYW1lIHRoZSB3aW5kIGZvciByZXZlYWxpbmcgdGhlbSB0byB0"
-      "aGUgdHJlZXMuIOKAlCBLYWhsaWwgR2licmFu.0YJo4r9gbI2nZ2_1_"
-      "KLTY3i5SRcZvahRuToavqBvLbm87pN7IYx8YV9kwKQclMW2ASpbEAzKNIJfQ3FycobRwZGtqCI9sRUo0vQvkpb3HIS6HKp3Kvur57J7LcZhz7uNIxzUYNQSg4EWp"
-      "whF9FnGng7bmU8qjNPiXCWfQ-n74gopAVzd3KDJ5ai7q66voRc9pCKJVbsaIMHIqcl9OPiMdY5Hz3_PgBalR2632HOdpUlIMvnMOL3EQICvyBwxaYPbhMcCpEc3_"
-      "4K-sywOGiCSp9KlaLcRq0knZtAT0ynJszaiOwfR-W18PEFLfGclpeR6e_gop9mq69t36wK7KRUjrQ";
+      "aGUgdHJlZXMuICDigJQgS2FobGlsIEdpYnJhbg.Nzoxko-KiYKIk8H5ne35hl4OXEqvZrj5Py9BgKUPrDt2UHRviJyMu_yLd2xGXZeDgd8-_"
+      "qXrBnfPG4sp0xmu1wKJeC0AYZ1ziQISNIumzwuxBLUSYUGUl4tlsqlRYMbM5f3l-HOh1JXjFIr_pBGLkgQmFLrUc-"
+      "sshBLL2Ux2Wu7otnJL4vHl4WDjwR6rzZAUYUxMvHGHJisL_"
+      "0A8vx1gEpYrw14OjgGDweeYx3ZaHz83Pq41LSSh7v1EMIqKcIrlNRzgFaBOGlxecGxhMorK3pqEZYy_K-XOzAmlNWkffjs0OLgJ74lTI6w3dYZ-"
+      "6kF9MDLhbo51p2sy0oNrRJB0lA";
 
 // the plaintext payload of the above JWS_COMMON
 static const char *PLAIN_COMMON = "If you reveal your secrets to the wind, you should not blame the "
-                                  "wind for revealing them to the trees. — Kahlil Gibran";
+                                  "wind for revealing them to the trees.  — Kahlil Gibran";
 
 static const char *_self_get_jwk_by_alg(const char *alg)
 {
@@ -453,6 +454,15 @@ START_TEST(test_cjose_jws_import_get_plain_before_verify)
     ck_assert_msg(cjose_jws_get_plaintext(jws, &plaintext, &plaintext_len, &err), "cjose_jws_get_plaintext before verify failed: "
                                                                                   "%s, file: %s, function: %s, line: %ld",
                   err.message, err.file, err.function, err.line);
+    fprintf(stderr, "length of plaintext (expected: %zd; actual :%zd)\n",
+                    strlen(PLAIN_COMMON),
+                    plaintext_len);
+    ck_assert_msg(plaintext_len == strlen(PLAIN_COMMON),
+                  "length of unverified plaintext does not match length of original, "
+                  "expected: %lu, found: %lu",
+                  strlen(PLAIN_COMMON), plaintext_len);
+    ck_assert_msg(strncmp(PLAIN_COMMON, plaintext, strlen(PLAIN_COMMON)) == 0,
+                  "unverified plaintext from JWS doesn't match the original");
 
     cjose_jws_release(jws);
 }
@@ -487,6 +497,13 @@ START_TEST(test_cjose_jws_import_get_plain_after_verify)
                   err.message, err.file, err.function, err.line);
 
     // compare the verified plaintext to the expected value
+    fprintf(stderr, "length of plaintext (expected: %zd; actual :%zd)\n",
+                    strlen(PLAIN_COMMON),
+                    plaintext_len);
+    ck_assert_msg(plaintext_len == strlen(PLAIN_COMMON),
+                  "length of unverified plaintext does not match length of original, "
+                  "expected: %lu, found: %lu",
+                  strlen(PLAIN_COMMON), plaintext_len);
     ck_assert_msg(strncmp(PLAIN_COMMON, plaintext, strlen(PLAIN_COMMON)) == 0,
                   "verified plaintext from JWS doesn't match the original");
 
